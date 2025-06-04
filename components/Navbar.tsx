@@ -22,17 +22,18 @@ export default function Navbar() {
           <div className="">
             <Image src="/aimanlogo.png" alt="Aiman Roza" width={100} height={100} />
           </div>
-          
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-40">
             {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
-              >
-                {item.label}
-              </a>
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="text-white font-medium transition-colors duration-200"
+                >
+                  {item.label}
+                  <span className="max-w-0 h-2.5 group-hover:max-w-full transition-all duration-300 bg-white"></span>
+                </a>
             ))}
           </div>
 
