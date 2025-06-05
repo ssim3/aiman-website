@@ -15,16 +15,16 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="absolute top-0 left-0 right-0 z-50 backdrop-blur-sm">
-      <div className="container mx-auto px-4 py-4">
+    <div className="absolute top-0 left-0 right-0 px-10 z-50">
+      <div className="mx-auto px-4 py-4">
         <nav className="flex items-center justify-between">
 
-          <div className="">
+          <div>
             <Image src="/aimanlogo.png" alt="Aiman Roza" width={100} height={100} />
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-40">
+          <div className="hidden lg:flex items-center gap-40">
             {navItems.map((item) => (
                 <a
                   key={item.label}
@@ -39,7 +39,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden"
+            className="lg:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -48,13 +48,13 @@ export default function Navbar() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-gray-100">
+          <div className="lg:hidden mt-4 pb-4 border-t border-gray-100">
             <div className="flex flex-col space-y-3 pt-4">
               {navItems.map((item) => (
                 <a
                   key={item.label}
                   href={item.href}
-                  className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
+                  className="text-white hover:text-blue-600 font-medium transition-colors duration-200"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
