@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen overflow-hidden relative">
-      <div className="absolute inset-0 -z-10">
+    <section className="min-h-screen overflow-hidden relative max-sm:bg-[var(--secondary)]">
+      <div className="absolute inset-0 -z-10 max-sm:hidden">
         <svg
           viewBox="0 0 1440 800"
           className="w-full h-full"
@@ -23,7 +23,7 @@ const Hero = () => {
         </svg>
       </div>
 
-      <div className="max-w-7xl m-auto p-10 relative z-10 mt-24">
+      <div className="max-w-7xl m-auto px-10 py-20 relative z-10 mt-24">
         <div className="flex flex-col-reverse sm:flex-row justify-between gap-12 items-center min-h-[70vh]">
           <div className="flex-1 text-white space-y-6 animate-fade-in">
             <h1 className="text-5xl font-bold leading-tight font-poppins">

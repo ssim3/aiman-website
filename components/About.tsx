@@ -12,7 +12,7 @@ const About = () => {
     {
       icon: Award,
       number: "10+",
-      label: "Years Experience",
+      label: "Years",
       color: "text-green-600"
     },
     {
@@ -31,12 +31,12 @@ const About = () => {
 
   return (
     <section>
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto p-10">
         <div className="flex justify-between gap-24 items-center">
           {/* Right - Content */}
           <div className="flex-3 flex flex-col gap-5">
             <div className='border-l-2 p-10 flex flex-col gap-5'>
-              <h2 className="text-4xl md:text-5xl font-bold text-[var(--secondary)] mb-4 font-poppins">
+              <h2 className="text-5xl font-bold text-[var(--secondary)] mb-4 font-poppins">
                 Hi! I'm Aiman
               </h2>
               <p className="text-lg leading-relaxed mb-6">
@@ -75,7 +75,7 @@ const About = () => {
           </div>
           
           {/* Left - Agent Photo */}
-          <div className="relative flex-2">
+          <div className="relative flex-2 max-lg:hidden">
             <Image src="/agent.png" width={500} height={600} alt="Agent Aiman Roza" />
           </div>
 
