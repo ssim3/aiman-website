@@ -12,7 +12,8 @@ const poppinsSans = Poppins({
 
 export const metadata: Metadata = {
   title: "Aiman Roza | Real Estate Agent",
-  description: "Professional real estate agent with over 10 years of experience helping families find their perfect home.",
+  description:
+    "Professional real estate agent with over 10 years of experience helping families find their perfect home.",
 };
 
 export default function RootLayout({
@@ -22,9 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${poppinsSans.variable} antialiased`}
-      >
+      <body className={`${poppinsSans.variable} antialiased`}>
         <Navbar />
         {children}
         <Footer />

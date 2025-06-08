@@ -36,7 +36,7 @@ const Hero = () => {
               helping families find their perfect home.
             </p>
 
-            <button className="flex bg-[var(--primary)]  text-white px-6 py-3 rounded-2xl font-semibold transition-all duration-300 transform hover:scale-105">
+            <button className="flex bg-[var(--primary)] text-white px-6 py-3 rounded-2xl font-semibold transition-all duration-300 transform hover:scale-105">
               👋 Contact
             </button>
           </div>
