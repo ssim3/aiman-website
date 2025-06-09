@@ -35,7 +35,7 @@ const About = () => {
         <div className="flex justify-between gap-24 items-center">
           {/* Right - Content */}
           <div className="flex-3 flex flex-col gap-5">
-            <div className="border-l-2 p-10 flex flex-col gap-5">
+            <div className="border-l-5 p-10 flex flex-col gap-5">
               <h2 className="text-5xl font-bold text-[var(--secondary)] mb-4 font-poppins">
                 Hi! I'm Aiman
               </h2>

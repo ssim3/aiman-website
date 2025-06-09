@@ -36,8 +36,9 @@ const Hero = () => {
               helping families find their perfect home.
             </p>
 
-            <button className="flex bg-[var(--primary)] text-white px-6 py-3 rounded-2xl font-semibold transition-all duration-300 transform hover:scale-105">
-              👋 Contact
+            <button className="flex gap-2 text-2xl items-center bg-[#25D366] text-white px-6 py-4 rounded-2xl font-semibold transition-all duration-300 transform hover:scale-105">
+              <Image src="https://img.icons8.com/?size=100&id=16712&format=png&color=FFFFFF" width={35} height={30} alt="Whatsapp Icon" />
+              Contact
             </button>
           </div>
 

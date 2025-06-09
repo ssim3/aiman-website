@@ -85,7 +85,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section id="accolades" className="p-10">
+    <section id="testimonials" className="p-10">
       <div className="flex flex-col gap-10 max-w-7xl mx-auto">
         <div>
           <h2 className="text-4xl font-bold text-[var(--secondary)] mb-4 font-poppins">
