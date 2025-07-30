@@ -15,8 +15,8 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="absolute top-0 left-0 right-0 px-10 z-50">
-      <div className="mx-auto px-4 py-4">
+    <div className="absolute top-0 left-0 right-0 z-50">
+      <div className="mx-auto px-10 sm:px-20 py-10">
         <nav className="flex items-center justify-between">
           <div>
             <Image
@@ -46,7 +46,11 @@ export default function Navbar() {
             className="lg:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? (
+              <X color="white" size={24} />
+            ) : (
+              <Menu color="white" size={24} />
+            )}
           </button>
         </nav>
 
