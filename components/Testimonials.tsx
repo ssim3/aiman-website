@@ -31,11 +31,6 @@ const Testimonials = () => {
     });
   }, [api]);
 
-  useEffect(() => {
-    console.log(current);
-    console.log(count);
-  }, [current]);
-
   const testimonials = [
     {
       id: 1,
@@ -89,7 +84,7 @@ const Testimonials = () => {
       <div className="flex flex-col gap-10 max-w-7xl mx-auto">
         <div>
           <h2 className="text-4xl font-bold text-[var(--secondary)] mb-4 font-poppins">
-            Client Success Stories
+            Latest Media
           </h2>
           <p className="text-gray-600">
             Hear from satisfied clients who trusted me with their real estate
@@ -111,56 +106,9 @@ const Testimonials = () => {
                   key={testimonial.id}
                   className="max-w-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4"
                 >
-                  <div className="group cursor-pointer">
-                    {/* Video Thumbnail Container */}
-                    <div className="relative aspect-[9/16] rounded-2xl overflow-hidden transition-all duration-300">
-                      {/* Thumbnail */}
-                      <div className="absolute inset-0 bg-gradient-to-b from-gray-600 to-gray-800 flex items-center justify-center">
-                        <span className="text-white text-sm font-poppins"></span>
-                      </div>
-
-                      {/* Play Button Overlay */}
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="rounded-full p-4 group-hover:bg-[var(--primary)]/30 group-hover:scale-105 transition-colors">
-                          <Youtube className="h-8 w-8 text-white group-hover:text-[var(--primary)]" />
-                        </div>
-                      </div>
-
-                      {/* Review Overlay at Bottom */}
-                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 flex flex-col gap-2">
-                        {/* Stars */}
-                        <div className="flex mb-2">
-                          {[...Array(5)].map((_, i) => (
-                            <Star
-                              key={i}
-                              className="h-3 w-3 text-yellow-400 fill-current"
-                            />
-                          ))}
-                        </div>
-
-                        {/* Review Text */}
-                        <p className="text-white text-xs mb-2 line-clamp-3">
-                          "{testimonial.review}"
-                        </p>
-
-                        {/* Client Info */}
-                        <div className="flex gap-2 items-center">
-                          <Image
-                            src="/agent.png"
-                            width={40}
-                            height={40}
-                            alt={testimonial.name}
-                            className="aspect-square rounded-full object-cover"
-                          />
-                          <div className="text-white">
-                            <p className="font-semibold text-sm">
-                              {testimonial.name}
-                            </p>
-                            <p className="text-xs">{testimonial.role}</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  <div>
+                    <blockquote className="tiktok-embed" cite="https://www.tiktok.com/@aiman.roza/video/7532481578925051154" data-video-id="7532481578925051154"> <section> <a target="_blank" title="@aiman.roza" href="https://www.tiktok.com/@aiman.roza?refer=embed">@aiman.roza</a> Why is your house still not sold? What is happening? <a title="resale" target="_blank" href="https://www.tiktok.com/tag/resale?refer=embed">#resale</a> <a title="hdb" target="_blank" href="https://www.tiktok.com/tag/hdb?refer=embed">#hdb</a> <a title="bto" target="_blank" href="https://www.tiktok.com/tag/bto?refer=embed">#bto</a> <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp?refer=embed">#fyp</a> <a target="_blank" title="♬ original sound  - aiman.roza" href="https://www.tiktok.com/music/original-sound-aimanroza-7532481612085332753?refer=embed">♬ original sound  - aiman.roza</a> </section> </blockquote> 
+                    <script async src="https://www.tiktok.com/embed.js"></script>
                   </div>
                 </CarouselItem>
               ))}

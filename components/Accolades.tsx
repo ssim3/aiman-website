@@ -28,11 +28,6 @@ const Accolades = () => {
     });
   }, [api]);
 
-  useEffect(() => {
-    console.log(current);
-    console.log(count);
-  }, [current]);
-
   const accolades = [
     {
       id: 1,
@@ -96,7 +91,7 @@ const Accolades = () => {
                   <div className="group">
                     {/* Award Image Placeholder */}
                     <div
-                      className={`max-w-full h-120 ${current + 1 === accolade.id || (current === count && accolade.id === 1) ? `lg:h-150` : `h-120`}  bg-gray-200 rounded-xl flex items-center justify-center mb-6 transition-all`}
+                      className={`max-w-full ${current + 1 === accolade.id || (current === count && accolade.id === 1) ? `lg:h-150 shadow-2xl` : `h-120 shadow-lg`}  bg-gray-200 rounded-xl flex items-center justify-center mb-6 transition-all ease-in duration-500`}
                     >
                       <span className="text-gray-500 text-sm font-poppins">
                         {accolade.image}
