@@ -1,6 +1,72 @@
+"use client";
+
 import Image from "next/image";
+import Bouncyballs from "./ui/bouncyballs";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 
 const Hero = () => {
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const descriptionRef = useRef<HTMLParagraphElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+  const imageRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const tl = gsap.timeline();
+
+    // Set initial states
+    gsap.set(
+      [
+        titleRef.current,
+        descriptionRef.current,
+        buttonRef.current,
+        imageRef.current,
+      ],
+      {
+        opacity: 0,
+        y: 50,
+      },
+    );
+
+    // Animate elements in sequence
+    tl.to(titleRef.current, {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      ease: "power2.out",
+    })
+      .to(
+        descriptionRef.current,
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          ease: "power2.out",
+        },
+        "-=0.4",
+      )
+      .to(
+        buttonRef.current,
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.3,
+          ease: "power2.out",
+        },
+        "-=0.2",
+      )
+      .to(
+        imageRef.current,
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          ease: "power2.out",
+        },
+        "-=0.6",
+      );
+  }, []);
+
   return (
     <section className="min-h-screen overflow-hidden relative max-sm:bg-[var(--secondary)]">
       <div className="absolute inset-0 -z-10 max-sm:hidden">
@@ -25,37 +91,59 @@ const Hero = () => {
 
       <div className="max-w-7xl m-auto px-10 py-20 relative z-10 mt-24">
         <div className="flex flex-col-reverse sm:flex-row justify-between gap-12 items-center min-h-[70vh]">
-          <div className="flex-1 text-white space-y-6 animate-fade-in">
-            <h1 className="text-5xl font-bold leading-tight font-poppins">
+          <div className="flex-1 text-white space-y-6">
+            <h1
+              ref={titleRef}
+              className="text-5xl font-bold leading-tight font-poppins"
+            >
               Making Your Dream Home a Reality—
               <span className="block text-[var(--primary)]">Every Time.</span>
             </h1>
 
-            <p className="text-lg text-blue-100 max-w-lg">
+            <p ref={descriptionRef} className="text-lg text-blue-100 max-w-lg">
               Professional real estate agent with over 10 years of experience
               helping families find their perfect home.
             </p>
 
-            <button className="flex gap-4 text-2xl items-center bg-[#25D366] text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105">
-              <Image
-                src="https://img.icons8.com/?size=100&id=16712&format=png&color=FFFFFF"
-                width={35}
-                height={30}
-                alt="Whatsapp Icon"
-              />
-              Contact
-            </button>
+            <div ref={buttonRef} className="flex gap-5 ">
+              <a href="https://calendly.com/agentaimanroza/first-time-buyer-hdb?month=2025-08">
+                <button className="group flex cursor-pointer gap-4 items-center bg-black hover:scale-105 duration-300 text-white px-6 py-4 rounded-2xl font-semibold transition-all transform">
+                  Book a Free Consultation
+                </button>
+              </a>
+
+              <a href="https://calendly.com/agentaimanroza/first-time-buyer-hdb?month=2025-08">
+                <button className="group flex cursor-pointer gap-4 items-center bg-white hover:scale-105 duration-300 text-black px-4 py-4 rounded-2xl font-semibold transition-all transform">
+                  Learn More
+                </button>
+              </a>
+            </div>
           </div>
           {/* Bouncing balls */}
-          <div className="flex-1 flex relative justify-center lg:justify-end">
+          <div
+            ref={imageRef}
+            className="flex-1 flex relative justify-center lg:justify-end"
+          >
             <Image
               src="/Hero.png"
               width={600}
               height={600}
               alt="Aiman Roza Hero"
             />
-            <div className="absolute -top-4 -right-4 w-8 h-8 bg-[var(--primary)] rounded-full animate-bounce"></div>
-            <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-[var(--primary)] rounded-full animate-bounce delay-75"></div>
+            <Bouncyballs
+              top="-top-4"
+              right="-right-4"
+              width="w-8"
+              height="h-8"
+              color="bg-[var(--primary)]"
+            />
+            <Bouncyballs
+              top="-bottom-4"
+              right="-left-4"
+              width="w-6"
+              height="h-6"
+              color="bg-[var(--primary)]"
+            />
           </div>
         </div>
       </div>

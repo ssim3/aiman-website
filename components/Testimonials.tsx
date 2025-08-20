@@ -107,8 +107,63 @@ const Testimonials = () => {
                   className="max-w-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4"
                 >
                   <div>
-                    <blockquote className="tiktok-embed" cite="https://www.tiktok.com/@aiman.roza/video/7532481578925051154" data-video-id="7532481578925051154"> <section> <a target="_blank" title="@aiman.roza" href="https://www.tiktok.com/@aiman.roza?refer=embed">@aiman.roza</a> Why is your house still not sold? What is happening? <a title="resale" target="_blank" href="https://www.tiktok.com/tag/resale?refer=embed">#resale</a> <a title="hdb" target="_blank" href="https://www.tiktok.com/tag/hdb?refer=embed">#hdb</a> <a title="bto" target="_blank" href="https://www.tiktok.com/tag/bto?refer=embed">#bto</a> <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp?refer=embed">#fyp</a> <a target="_blank" title="♬ original sound  - aiman.roza" href="https://www.tiktok.com/music/original-sound-aimanroza-7532481612085332753?refer=embed">♬ original sound  - aiman.roza</a> </section> </blockquote> 
-                    <script async src="https://www.tiktok.com/embed.js"></script>
+                    <blockquote
+                      className="tiktok-embed"
+                      cite="https://www.tiktok.com/@aiman.roza/video/7532481578925051154"
+                      data-video-id="7532481578925051154"
+                    >
+                      {" "}
+                      <section>
+                        {" "}
+                        <a
+                          target="_blank"
+                          title="@aiman.roza"
+                          href="https://www.tiktok.com/@aiman.roza?refer=embed"
+                        >
+                          @aiman.roza
+                        </a>{" "}
+                        Why is your house still not sold? What is happening?{" "}
+                        <a
+                          title="resale"
+                          target="_blank"
+                          href="https://www.tiktok.com/tag/resale?refer=embed"
+                        >
+                          #resale
+                        </a>{" "}
+                        <a
+                          title="hdb"
+                          target="_blank"
+                          href="https://www.tiktok.com/tag/hdb?refer=embed"
+                        >
+                          #hdb
+                        </a>{" "}
+                        <a
+                          title="bto"
+                          target="_blank"
+                          href="https://www.tiktok.com/tag/bto?refer=embed"
+                        >
+                          #bto
+                        </a>{" "}
+                        <a
+                          title="fyp"
+                          target="_blank"
+                          href="https://www.tiktok.com/tag/fyp?refer=embed"
+                        >
+                          #fyp
+                        </a>{" "}
+                        <a
+                          target="_blank"
+                          title="♬ original sound  - aiman.roza"
+                          href="https://www.tiktok.com/music/original-sound-aimanroza-7532481612085332753?refer=embed"
+                        >
+                          ♬ original sound - aiman.roza
+                        </a>{" "}
+                      </section>{" "}
+                    </blockquote>
+                    <script
+                      async
+                      src="https://www.tiktok.com/embed.js"
+                    ></script>
                   </div>
                 </CarouselItem>
               ))}
