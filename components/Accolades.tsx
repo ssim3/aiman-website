@@ -9,6 +9,7 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel";
 import { useState, useEffect } from "react";
+import SectionHeading from "./ui/SectionHeading";
 
 const Accolades = () => {
   const [api, setApi] = useState<CarouselApi>();
@@ -63,16 +64,18 @@ const Accolades = () => {
 
   return (
     <section id="accolades" className="p-10">
-      <div className="flex flex-col gap-10 max-w-7xl mx-auto">
-        <div className="text-center">
-          <h2 className="text-4xl font-bold text-[var(--secondary)] mb-4 font-poppins">
-            Awards & Accolades
-          </h2>
-          <p className="text-gray-600">
-            Recognition for excellence in real estate service and community
-            commitment
-          </p>
-        </div>
+      <div className="relative flex flex-col gap-10 max-w-7xl mx-auto">
+        <SectionHeading
+          topOne="top-10"
+          topTwo="top-30"
+          rightOne="right-20"
+          rightTwo="left-20"
+          title="Accolades and Awards"
+          margin="my-10"
+          height="h-6"
+          width="w-6"
+          description="Recognition for excellence in real estate service and community commitment"
+        />
 
         <div>
           <Carousel

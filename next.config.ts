@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
         hostname: "img.icons8.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "lh3.googleusercontent.com",
+        port: "",
+      },
     ],
   },
 };

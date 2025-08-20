@@ -5,6 +5,7 @@ import Testimonials from "@/components/Testimonials";
 import Accolades from "@/components/Accolades";
 import MyApproach from "@/components/MyApproach";
 import Timeline from "@/components/Timeline";
+import Reviews from "@/components/Reviews";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <MyApproach />
       <Timeline />
       <Services />
+      <Reviews />
       <Accolades />
       <Testimonials />
     </div>

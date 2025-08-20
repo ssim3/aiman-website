@@ -1,30 +1,19 @@
 import React from "react";
-import ApproachCard from "./ApproachCard";
+import ApproachCard from "./ui/ApproachCard";
 import Bouncyballs from "./ui/bouncyballs";
+import SectionHeading from "./ui/SectionHeading";
 
 const MyApproach = () => {
   return (
     <div className="relative flex flex-col p-10 gap-20 max-w-7xl mx-auto">
-      <Bouncyballs
-        top="top-40"
-        right="right-40"
-        width="w-8"
-        height="h-8"
-        color="bg-[var(--primary)]"
+      <SectionHeading
+        topOne="top-40"
+        topTwo="top-30"
+        rightOne="right-20"
+        rightTwo="left-20"
+        title="My Approach"
+        description="Find out how I work to best serve your needs."
       />
-      <Bouncyballs
-        top="top-80"
-        right="left-40"
-        width="w-8"
-        height="h-8"
-        color="bg-[var(--primary)]"
-      />
-      <div className="text-center my-50 flex flex-col gap-5">
-        <h2 className="text-5xl text-[var(--secondary)] font-bold">
-          My Approach
-        </h2>
-        <p>Find out how I work to best serve your needs.</p>
-      </div>
       <ApproachCard
         title="Listen First, Advise Second"
         description="Understanding your unique needs and goals is always my starting point. I believe every client has a story, and I take the time to listen before offering any advice."

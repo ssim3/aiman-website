@@ -1,4 +1,5 @@
 import { Home, LucideDollarSign, Camera } from "lucide-react";
+import SectionHeading from "./ui/SectionHeading";
 
 const Services = () => {
   const services = [
@@ -27,16 +28,18 @@ const Services = () => {
 
   return (
     <section id="services" className="p-10">
-      <div className="flex flex-col gap-10 max-w-7xl mx-auto">
-        <div>
-          <h2 className="text-4xl font-bold text-[var(--secondary)] mb-4 font-poppins">
-            My Services
-          </h2>
-          <p className="text-gray-600">
-            Comprehensive real estate services tailored to your unique needs and
-            goals.
-          </p>
-        </div>
+      <div className="relative flex flex-col gap-10 max-w-7xl mx-auto">
+        <SectionHeading
+          topOne="top-10"
+          topTwo="top-40"
+          rightOne="right-20"
+          rightTwo="left-20"
+          title="My Services"
+          margin="my-10"
+          width="w-6"
+          height="h-6"
+          description="Find out how I work to best serve your needs."
+        />
 
         <div className="grid md:grid-cols-3 gap-10">
           {services.map((service, index) => (
