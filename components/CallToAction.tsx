@@ -25,23 +25,14 @@ const CallToAction = () => {
             #HAVE <span className="text-[var(--primary)]">IMAN</span> IN{" "}
             <span className="text-[var(--primary)]">AIMAN</span>.
           </h1>
-          <p className="text-lg md:text-xl max-w-xl">
+          <p className="text-lg text-gray-200">
             Ready to find your dream home or need expert real estate advice?
             Contact Aiman today and experience the difference.
           </p>
-          <a
-            href={WHATSAPP_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex gap-3 items-center mt-5 bg-green-500 text-white font-semibold px-8 py-4 rounded-full text-lg shadow transition hover:scale-105"
-          >
-            <Image
-              src="https://img.icons8.com/?size=100&id=16712&format=png&color=FFFFFF"
-              width={35}
-              height={30}
-              alt="Whatsapp Icon"
-            />
-            Contact on WhatsApp
+          <a href="https://calendly.com/agentaimanroza/first-time-buyer-hdb?month=2025-08">
+            <button className="group flex cursor-pointer gap-4 items-center bg-black hover:scale-105 duration-300 text-white px-6 py-4 rounded-2xl font-semibold transition-all transform">
+              Book a Free Consultation
+            </button>
           </a>
         </div>
       </div>

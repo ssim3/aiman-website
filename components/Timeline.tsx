@@ -86,16 +86,16 @@ export default function Timeline() {
       {/* Interactive Timeline */}
       <div className="relative">
         {/* Full-bleed lines spanning the viewport */}
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-screen h-1 z-0">
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[calc(100%-4rem)] h-1 z-0">
           <div className="absolute inset-0 rounded-2xl bg-border"></div>
           <div
             className="absolute top-0 left-0 h-1 rounded-2xl bg-gradient-to-r from-primary to-primary/80 transition-all duration-500 ease-out"
-            style={{ width: `${(activeStep / steps.length) * 100}vw` }}
+            style={{ width: `${(activeStep / steps.length) * 100}%` }}
           ></div>
         </div>
 
         {/* Timeline Points */}
-        <div className="relative flex justify-between items-center">
+        <div className="relative flex justify-evenly items-center">
           {steps.map((step) => (
             <div key={step.id} className="flex flex-col gap-2 items-center">
               <button
