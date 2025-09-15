@@ -45,7 +45,7 @@ const SectionHeading = ({
           dangerouslySetInnerHTML={{ __html: title }}
           className="text-5xl text-[var(--secondary)] font-bold"
         ></h2>
-        <p>{description}</p>
+        <p className="text-lg">{description}</p>
       </div>
     </>
   );

@@ -30,7 +30,10 @@ const ApproachCard = ({
 
   const ContentSection = () => (
     <div className="space-y-6">
-      <h3 className="text-3xl font-bold text-navy">{title}</h3>
+      <h3
+        className="text-3xl font-bold text-navy"
+        dangerouslySetInnerHTML={{ __html: title }}
+      ></h3>
       <p className="text-xl leading-relaxed">{description}</p>
       <p className="text-muted-foreground">{details}</p>
     </div>

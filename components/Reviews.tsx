@@ -68,7 +68,7 @@ export default function Reviews() {
               </div>
             </div>
 
-            <p className="text-gray-500">{review.text.slice(0, 300)} ...</p>
+            <p className="text-gray-500">{review.text.slice(0, 200)} ...</p>
           </div>
         ))}
       </div>

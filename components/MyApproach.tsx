@@ -11,9 +11,15 @@ const MyApproach = () => {
         topTwo="top-30"
         rightOne="right-20"
         rightTwo="left-20"
-        title="My Approach"
+        title={`My Method, The <span class="text-[var(--primary)]">S.A.F.E</span> Approach`}
         description="Find out how I work to best serve your needs."
       />
+      <p className="text-lg max-w-5xl m-auto mb-20">
+        Every property decision has a purpose. My signature S.A.F.E. approach
+        ensures every move is clear, confident, and aligned with your long-term
+        goals — helping you protect your lifestyle and move closer to early,
+        comfortable retirement in HDBs, Condos, or private properties.
+      </p>
       <ApproachCard
         title="Listen First, Advise Second"
         description="Understanding your unique needs and goals is always my starting point. I believe every client has a story, and I take the time to listen before offering any advice."

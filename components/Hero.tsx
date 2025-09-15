@@ -96,25 +96,23 @@ const Hero = () => {
               ref={titleRef}
               className="text-5xl font-bold leading-tight font-poppins"
             >
-              Making Your Dream Home a Reality—
-              <span className="block text-[var(--primary)]">Every Time.</span>
+              Your Property, Your S.A.F.E Haven—
+              <span className="block text-[var(--primary)]">
+                Today and for the Future.
+              </span>
             </h1>
 
             <p ref={descriptionRef} className="text-lg text-blue-100 max-w-lg">
-              Professional real estate agent with over 10 years of experience
-              helping families find their perfect home.
+              Aiman Roza — Top 1% Malay Property Agent in Singapore, trusted by
+              hundreds of families in HDB and Condo transactions to make smart
+              property moves that protect their lifestyle and secure their
+              retirement.
             </p>
 
             <div ref={buttonRef} className="flex gap-5 ">
               <a href="https://calendly.com/agentaimanroza/first-time-buyer-hdb?month=2025-08">
                 <button className="group flex cursor-pointer gap-4 items-center bg-black hover:scale-105 duration-300 text-white px-6 py-4 rounded-2xl font-semibold transition-all transform">
-                  Book a Free Consultation
-                </button>
-              </a>
-
-              <a href="https://calendly.com/agentaimanroza/first-time-buyer-hdb?month=2025-08">
-                <button className="group flex cursor-pointer gap-4 items-center bg-white hover:scale-105 duration-300 text-black px-4 py-4 rounded-2xl font-semibold transition-all transform">
-                  Learn More
+                  Plan My Property Move
                 </button>
               </a>
             </div>
