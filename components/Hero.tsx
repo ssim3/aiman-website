@@ -104,9 +104,7 @@ const Hero = () => {
 
             <p ref={descriptionRef} className="text-lg text-blue-100 max-w-lg">
               Aiman Roza — Top 1% Malay Property Agent in Singapore, trusted by
-              hundreds of families in HDB and Condo transactions to make smart
-              property moves that protect their lifestyle and secure their
-              retirement.
+              hundreds of families in HDB and Condo transactions.
             </p>
 
             <div ref={buttonRef} className="flex gap-5 ">

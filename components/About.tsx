@@ -64,7 +64,7 @@ const About = () => {
             </div>
 
             {/* Stats Grid */}
-            <div className="flex gap-10 justify-between items-center">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
               {stats.map((stat, index) => (
                 <div
                   key={index}
