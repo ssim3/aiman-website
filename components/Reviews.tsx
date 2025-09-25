@@ -14,8 +14,6 @@ type Review = {
 export default function Reviews() {
   const [reviews, setReviews] = useState<Review[]>([]);
 
-  console.log(reviews);
-
   useEffect(() => {
     fetch("/api/reviews")
       .then((res) => res.json())

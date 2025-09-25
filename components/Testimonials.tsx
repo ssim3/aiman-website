@@ -11,7 +11,6 @@ import {
 } from "@/components/ui/carousel";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
 
 const Testimonials = () => {
   const [api, setApi] = useState<CarouselApi>();

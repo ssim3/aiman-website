@@ -43,7 +43,7 @@ const SectionHeading = ({
       <div className={`text-center flex flex-col ${margin} gap-8`}>
         <h2
           dangerouslySetInnerHTML={{ __html: title }}
-          className="text-5xl text-[var(--secondary)] font-bold"
+          className="text-5xl text-[var(--secondary)] font-bold leading-tight"
         ></h2>
         <p className="text-lg">{description}</p>
       </div>
