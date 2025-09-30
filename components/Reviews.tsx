@@ -110,7 +110,7 @@ export default function Reviews() {
                       </p>
                     </div>
                   </DialogTrigger>
-                  <DialogContent className="max-w-4xl w-full p-0">
+                  <DialogContent className="w-full p-0">
                     <div className="aspect-video w-full">
                       <iframe
                         width="100%"
@@ -134,7 +134,7 @@ export default function Reviews() {
 
       {/* Google Reviews Section */}
       <div className="flex flex-col items-center gap-6">
-        <div className="flex justify-center gap-6">
+        <div className="max-md:flex-col flex justify-center gap-6">
           {reviews.slice(0, 3).map((review, idx) => (
             <div
               key={idx}
@@ -174,7 +174,7 @@ export default function Reviews() {
             </div>
           ))}
         </div>
-        <div className="flex justify-center gap-6">
+        <div className="max-md:flex-col flex justify-center gap-6">
           {reviews.slice(3, 5).map((review, idx) => (
             <div
               key={idx}
