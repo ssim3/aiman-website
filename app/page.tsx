@@ -1,10 +1,9 @@
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Services from "@/components/Services";
-import Testimonials from "@/components/Testimonials";
+import Media from "@/components/Media";
 import Accolades from "@/components/Accolades";
 import MyApproach from "@/components/MyApproach";
-import Timeline from "@/components/Timeline";
 import Reviews from "@/components/Reviews";
 
 export default function Home() {
@@ -13,11 +12,10 @@ export default function Home() {
       <Hero />
       <About />
       <MyApproach />
-      <Timeline />
       <Services />
       <Reviews />
       <Accolades />
-      <Testimonials />
+      <Media />
     </div>
   );
 }

@@ -10,26 +10,26 @@ const MyApproach = () => {
       number: "1",
       icon: Shield,
       title: "Secure Foundation",
-      description: "Assess your current situation and goals"
+      description: "Assess your current situation and goals",
     },
     {
       number: "2",
       icon: TrendingUp,
       title: "Analyze Opportunities",
-      description: "Identify the best market opportunities"
+      description: "Identify the best market opportunities",
     },
     {
       number: "3",
       icon: FileCheck,
       title: "Future-proof Planning",
-      description: "Create a strategic roadmap for your goals"
+      description: "Create a strategic roadmap for your goals",
     },
     {
       number: "4",
       icon: Users,
       title: "Execute Together",
-      description: "Implement your property strategy with confidence"
-    }
+      description: "Implement your property strategy with confidence",
+    },
   ];
 
   return (
@@ -42,18 +42,25 @@ const MyApproach = () => {
         title={`My Method, The <span class="text-[var(--primary)]">S.A.F.E</span> Approach`}
         description="Find out how I work to best serve your needs."
       />
-      
+
       {/* Image and Paragraph Section */}
       <div className="flex flex-col lg:flex-row items-center gap-10 max-w-5xl mx-auto mb-20">
         <div className="aspect-[16/9]">
-          <Image className="rounded-xl" src="/approach2.png" height={500} width={500} alt="Aiman Image" />
+          <Image
+            className="rounded-xl"
+            src="/approach2.png"
+            height={500}
+            width={500}
+            alt="Aiman Image"
+          />
         </div>
         <div className="lg:w-2/3">
           <p className="text-lg">
-            Every property decision has a purpose. My signature S.A.F.E. approach
-            ensures every move is clear, confident, and aligned with your long-term
-            goals — helping you protect your lifestyle and move closer to early,
-            comfortable retirement in HDBs, Condos, or private properties.
+            Every property decision has a purpose. My signature S.A.F.E.
+            approach ensures every move is clear, confident, and aligned with
+            your long-term goals — helping you protect your lifestyle and move
+            closer to early, comfortable retirement in HDBs, Condos, or private
+            properties.
           </p>
         </div>
       </div>
@@ -61,8 +68,8 @@ const MyApproach = () => {
       {/* Steps Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
         {steps.map((step, index) => (
-          <div 
-            key={index} 
+          <div
+            key={index}
             className="text-center group cursor-pointer transition-all duration-300"
           >
             <div className="relative mb-4 p-6 bg-white rounded-2xl shadow-lg hover:bg-[var(--primary)] hover:text-white transition-all duration-300 group-hover:shadow-2xl">
@@ -72,7 +79,7 @@ const MyApproach = () => {
               <div className="absolute -top-2 -right-2 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold group-hover:bg-white group-hover:text-[var(--primary)] transition-colors duration-300">
                 {step.number}
               </div>
-              
+
               <h3 className="text-lg font-semibold mb-2 duration-300">
                 {step.title}
               </h3>
@@ -86,7 +93,9 @@ const MyApproach = () => {
 
       {/* How It Works Section */}
       <div className="bg-muted rounded-2xl p-8 mb-8">
-        <h3 className="text-2xl font-bold text-foreground mb-6 text-center">How It Works</h3>
+        <h3 className="text-2xl font-bold text-foreground mb-6 text-center">
+          How It Works
+        </h3>
         <div className="space-y-4 max-w-2xl mx-auto">
           <div className="flex items-start gap-4">
             <div className="w-4 h-4 bg-[var(--primary)] text-white rounded-full flex items-center justify-center text-sm font-bold mt-0.5 flex-shrink-0">
@@ -101,7 +110,8 @@ const MyApproach = () => {
               •
             </div>
             <p className="text-muted-foreground text-left">
-              Designed to help you avoid costly mistakes and maximize opportunities.
+              Designed to help you avoid costly mistakes and maximize
+              opportunities.
             </p>
           </div>
           <div className="flex items-start gap-4">

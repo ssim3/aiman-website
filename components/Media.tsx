@@ -12,7 +12,7 @@ import {
 
 import { useState, useEffect } from "react";
 
-const Testimonials = () => {
+const Media = () => {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
@@ -176,4 +176,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default Media;

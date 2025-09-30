@@ -10,20 +10,26 @@ interface ServiceCardProps {
   accentColor: "primary" | "secondary";
 }
 
-const ServiceCard = ({ icon: Icon, title, description, image, accentColor }: ServiceCardProps) => {
+const ServiceCard = ({
+  icon: Icon,
+  title,
+  description,
+  image,
+  accentColor,
+}: ServiceCardProps) => {
   const colorClasses = {
     primary: {
       bg: "bg-red-100",
       hoverBg: "group-hover:bg-[var(--primary)]",
       icon: "text-[var(--primary)]",
-      hoverIcon: "group-hover:text-white"
+      hoverIcon: "group-hover:text-white",
     },
     secondary: {
       bg: "bg-blue-100",
       hoverBg: "group-hover:bg-[var(--secondary)]",
       icon: "text-[var(--secondary)]",
-      hoverIcon: "group-hover:text-white"
-    }
+      hoverIcon: "group-hover:text-white",
+    },
   };
 
   const colors = colorClasses[accentColor];
@@ -32,16 +38,18 @@ const ServiceCard = ({ icon: Icon, title, description, image, accentColor }: Ser
     <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
       {/* Image */}
       <div className="h-48 bg-gray-200 flex items-center justify-center">
-        <span className="text-gray-500 font-poppins">
-          {image}
-        </span>
+        <span className="text-gray-500 font-poppins">{image}</span>
       </div>
 
       {/* Content */}
       <div className="p-6">
         <div className="flex items-center mb-4">
-          <div className={`w-12 h-12 ${colors.bg} rounded-lg flex items-center justify-center ${colors.hoverBg} transition-colors duration-300`}>
-            <Icon className={`h-6 w-6 ${colors.icon} ${colors.hoverIcon} transition-colors duration-300`} />
+          <div
+            className={`w-12 h-12 ${colors.bg} rounded-lg flex items-center justify-center ${colors.hoverBg} transition-colors duration-300`}
+          >
+            <Icon
+              className={`h-6 w-6 ${colors.icon} ${colors.hoverIcon} transition-colors duration-300`}
+            />
           </div>
         </div>
 
@@ -49,9 +57,7 @@ const ServiceCard = ({ icon: Icon, title, description, image, accentColor }: Ser
           {title}
         </h3>
 
-        <p className="text-gray-600 leading-relaxed">
-          {description}
-        </p>
+        <p className="text-gray-600 leading-relaxed">{description}</p>
       </div>
     </div>
   );
@@ -72,11 +78,17 @@ interface ServiceSectionProps {
   accentText: string;
 }
 
-const ServiceSection = ({ title, services, accentColor, accentText }: ServiceSectionProps) => {
+const ServiceSection = ({
+  title,
+  services,
+  accentColor,
+  accentText,
+}: ServiceSectionProps) => {
   return (
     <div className="flex flex-col gap-10">
       <h3 className="ml-2 text-4xl font-bold">
-        {title} <span className={`text-[var(--${accentColor})]`}>{accentText}</span>
+        {title}{" "}
+        <span className={`text-[var(--${accentColor})]`}>{accentText}</span>
       </h3>
 
       <div className="grid md:grid-cols-3 gap-10">
