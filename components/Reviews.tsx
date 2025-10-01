@@ -72,7 +72,7 @@ export default function Reviews() {
       />
 
       {/* Video Testimonials Carousel */}
-      <div className="mb-16">
+      <div className="mb-10">
         <Carousel
           opts={{
             align: "start",
@@ -174,7 +174,7 @@ export default function Reviews() {
             </div>
           ))}
         </div>
-        <div className="max-md:flex-col flex justify-center gap-6">
+        <div className="max-md:flex-col flex justify-center gap-6 max-sm:hidden">
           {reviews.slice(3, 5).map((review, idx) => (
             <div
               key={idx}

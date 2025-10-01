@@ -5,6 +5,7 @@ import Media from "@/components/Media";
 import Accolades from "@/components/Accolades";
 import MyApproach from "@/components/MyApproach";
 import Reviews from "@/components/Reviews";
+import Socials from "@/components/Socials";
 
 export default function Home() {
   return (

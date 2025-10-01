@@ -15,7 +15,7 @@ const Bouncyballs = ({
 }) => {
   return (
     <div
-      className={`absolute ${top} ${right} ${width} ${height} ${color} rounded-full animate-bounce`}
+      className={`absolute ${top} ${right} ${width} ${height} ${color} rounded-full animate-bounce max-md:hidden`}
     ></div>
   );
 };

@@ -142,7 +142,7 @@ const MyApproach = () => {
         </a>
         <a href="#guide" className="inline-flex">
           <Button variant="outline" size="lg" className="w-full sm:w-auto">
-            Download My Free Guide
+            Request for My Free Guide
           </Button>
         </a>
       </div>

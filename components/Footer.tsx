@@ -1,6 +1,7 @@
 import { Phone, Mail, MapPin } from "lucide-react";
 import Image from "next/image";
 import CallToAction from "./CallToAction";
+import Socials from "./Socials";
 
 const Footer = () => {
   const quickLinks = [
@@ -19,6 +20,7 @@ const Footer = () => {
 
   return (
     <>
+      <Socials />
       <CallToAction />
       <footer className="bg-gray-900 text-white py-16">
         <div className="max-w-7xl px-10 mx-auto">
