@@ -59,6 +59,7 @@ export default function Reviews() {
   }, []);
 
   return (
+    <div className="p-10 bg-[#f4f8ff] rounded-2xl pb-20">
     <div className="relative max-w-7xl px-10 m-auto">
       <SectionHeading
         topOne="top-10"
@@ -215,6 +216,7 @@ export default function Reviews() {
           ))}
         </div>
       </div>
+    </div>
     </div>
   );
 }
