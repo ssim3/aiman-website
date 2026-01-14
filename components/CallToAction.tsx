@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 const WHATSAPP_LINK = "https://wa.me/60123456789"; // Replace with Aiman's actual WhatsApp number
-const IMAGE_URL = "/aimn.jpg"; // Replace with actual image path or use a placeholder
+const IMAGE_URL = "/aiman.jpg"; // Replace with actual image path or use a placeholder
 
 const CallToAction = () => {
   return (

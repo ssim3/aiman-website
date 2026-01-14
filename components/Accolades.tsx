@@ -41,13 +41,13 @@ const Accolades = () => {
       image: "Award Photo 3",
     },
     {
-      id: 2,
+      id: 4,
       title: "Excellence in Service",
       organization: "National Realty Association",
       image: "Award Photo 2",
     },
     {
-      id: 3,
+      id: 5,
       title: "Client Choice Award",
       organization: "Metropolitan Real Estate",
       image: "Award Photo 3",
@@ -68,13 +68,13 @@ const Accolades = () => {
       image: "Award Photo 5",
     },
         {
-      id: 4,
+      id: 6,
       title: "Million Dollar Club",
       organization: "Premier Realty Group",
       image: "Award Photo 4",
     },
     {
-      id: 5,
+      id: 7,
       title: "Community Service Award",
       organization: "Local Chamber of Commerce",
       image: "Award Photo 5",
@@ -103,13 +103,13 @@ const Accolades = () => {
     );
   }, [apiBottom]);
 
-  const renderCarousel = (list, apiSetter, current, count) => (
+  const renderCarousel = (list : any, apiSetter : any, current : any, count : any) => (
     <Carousel
       opts={{ align: "start", loop: true }}
       setApi={apiSetter}
     >
       <CarouselContent className="items-center">
-        {list.map((accolade, index) => (
+        {list.map((accolade : any, index : number) => (
           <CarouselItem key={accolade.id} className="max-w-full md:basis-1/2 lg:basis-1/3">
             <div className="group">
               <div
