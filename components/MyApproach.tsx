@@ -33,7 +33,7 @@ const MyApproach = () => {
   ];
 
   return (
-    <div className="p-10 bg-[#f4f8ff] rounded-2xl">
+    <div className="p-0 sm:p-10 bg-[#f4f8ff] rounded-2xl">
       <div className="relative flex flex-col p-10 max-w-7xl mx-auto">
         <SectionHeading
           topOne="top-40"
@@ -46,8 +46,8 @@ const MyApproach = () => {
 
         <div>
           {/* Image and Paragraph Section */}
-          <div className="flex flex-col lg:flex-row items-center gap-10 max-w-5xl mx-auto mb-20">
-            <div className="aspect-[16/9]">
+          <div className="flex flex-col lg:flex-row justify-center items-center gap-10 max-w-5xl mx-auto mb-20">
+            <div>
               <Image
                 className="rounded-xl"
                 src="/safe.jpg"
@@ -125,7 +125,7 @@ const MyApproach = () => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center mt-15">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-15">
             <a href="https://calendly.com/agentaimanroza/first-time-buyer-hdb?month=2025-08">
               <button className="group flex cursor-pointer gap-4 items-center bg-black hover:scale-105 duration-300 text-white px-6 py-4 rounded-2xl font-semibold transition-all transform">
                 Book a Free Consultation
