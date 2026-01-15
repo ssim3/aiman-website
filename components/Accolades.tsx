@@ -67,7 +67,7 @@ const Accolades = () => {
       organization: "Local Chamber of Commerce",
       image: "Award Photo 5",
     },
-        {
+    {
       id: 6,
       title: "Million Dollar Club",
       organization: "Premier Realty Group",
@@ -99,18 +99,23 @@ const Accolades = () => {
     setCurrentBottom(apiBottom.selectedScrollSnap() + 1);
 
     apiBottom.on("select", () =>
-      setCurrentBottom(apiBottom.selectedScrollSnap() + 1)
+      setCurrentBottom(apiBottom.selectedScrollSnap() + 1),
     );
   }, [apiBottom]);
 
-  const renderCarousel = (list : any, apiSetter : any, current : any, count : any) => (
-    <Carousel
-      opts={{ align: "start", loop: true }}
-      setApi={apiSetter}
-    >
+  const renderCarousel = (
+    list: any,
+    apiSetter: any,
+    current: any,
+    count: any,
+  ) => (
+    <Carousel opts={{ align: "start", loop: true }} setApi={apiSetter}>
       <CarouselContent className="items-center">
-        {list.map((accolade : any, index : number) => (
-          <CarouselItem key={accolade.id} className="max-w-full md:basis-1/2 lg:basis-1/3">
+        {list.map((accolade: any, index: number) => (
+          <CarouselItem
+            key={accolade.id}
+            className="max-w-full md:basis-1/2 lg:basis-1/3"
+          >
             <div className="group">
               <div
                 className={`max-w-full ${
@@ -159,7 +164,12 @@ const Accolades = () => {
         {renderCarousel(accoladesTop, setApiTop, currentTop, countTop)}
 
         {/* Bottom Row */}
-        {renderCarousel(accoladesBottom, setApiBottom, currentBottom, countBottom)}
+        {renderCarousel(
+          accoladesBottom,
+          setApiBottom,
+          currentBottom,
+          countBottom,
+        )}
       </div>
     </section>
   );

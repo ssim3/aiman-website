@@ -1,5 +1,12 @@
 import React from "react";
-import { Instagram, Facebook, Linkedin, Twitter, Youtube, Mail } from "lucide-react";
+import {
+  Instagram,
+  Facebook,
+  Linkedin,
+  Twitter,
+  Youtube,
+  Mail,
+} from "lucide-react";
 
 const Socials = () => {
   const socialLinks = [
@@ -76,9 +83,7 @@ const Socials = () => {
                 <span className="text-white font-semibold text-sm mb-1">
                   {social.name}
                 </span>
-                <span className="text-white/80 text-xs">
-                  {social.handle}
-                </span>
+                <span className="text-white/80 text-xs">{social.handle}</span>
               </a>
             );
           })}

@@ -14,7 +14,6 @@ const CallToAction = () => {
             src={IMAGE_URL}
             width={800}
             height={450}
-            objectFit="cover"
             alt="Aiman Roza"
             className="aspect-[16/9] rounded-xl shadow-lg object-cover"
           />
